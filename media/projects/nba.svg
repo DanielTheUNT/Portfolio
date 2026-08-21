@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440">
-<rect width="900" height="440" fill="#0d1b2a"/>
-<circle cx="780" cy="80" r="180" fill="#ff7a00" opacity="0.12"/>
-<circle cx="120" cy="400" r="140" fill="#ff7a00" opacity="0.10"/>
-<text x="450" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#ffffff">NBA Finals Analyzer</text>
-<text x="450" y="250" text-anchor="middle" font-family="monospace" font-size="21" fill="#ff7a00">Predict the champ. Project the scorers.</text>
-<rect x="415" y="290" width="70" height="6" rx="3" fill="#ff7a00"/>
-</svg>
