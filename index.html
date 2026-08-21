@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniel Akisanmi — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --text:#111318;
+    --muted:#555c68;
+    --line:#e7e9ee;
+    --accent:#2f6bff;
+    --card:#ffffff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:#ffffff;color:var(--text);
+    font-family:'Poppins',system-ui,sans-serif;line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+  /* NAV */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+  .brand{font-weight:800;font-size:26px;letter-spacing:-.02em}
+  .nav-links{display:flex;gap:26px}
+  .nav-links a{font-size:16px;color:var(--text);transition:color .15s}
+  .nav-links a:hover{color:var(--accent)}
+
+  /* HERO */
+  .hero{padding:110px 0 90px}
+  .hero-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:44px;align-items:center}
+  .hero h1{font-weight:700;font-size:clamp(30px,4.4vw,42px);margin-bottom:18px}
+  .hero p{color:var(--text);font-size:16.5px;max-width:58ch;margin-bottom:26px}
+  .tech{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .tech span{
+    font-size:14px;font-weight:600;background:#f3f5f9;border:1px solid var(--line);
+    padding:9px 15px;border-radius:10px;
+  }
+  .portrait img{
+    width:100%;max-width:330px;border-radius:6px;display:block;
+    box-shadow:0 8px 30px rgba(17,19,24,.12);
+    justify-self:center;
+  }
+
+  /* PROJECTS */
+  .projects{padding:60px 0 30px}
+  .projects > .wrap > h2, .contact h2{font-weight:800;font-size:34px;margin-bottom:30px}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;
+    transition:box-shadow .18s,transform .18s;display:flex;flex-direction:column;
+  }
+  .card:hover{box-shadow:0 10px 28px rgba(17,19,24,.10);transform:translateY(-2px)}
+  .card.wide{grid-column:1 / -1;display:grid;grid-template-columns:1.2fr 1fr}
+  .card.wide .thumb{height:100%}
+  .thumb{width:100%;aspect-ratio:900/440;object-fit:cover;display:block;background:#0d1b2a}
+  .card-body{padding:22px 24px 24px}
+  .meta{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:14px;margin-bottom:8px}
+  .meta .link{font-weight:600;color:var(--text)}
+  .meta .link:hover{color:var(--accent)}
+  .card h3{font-weight:700;font-size:24px;margin-bottom:8px}
+  .card p{color:var(--text);font-size:15px;margin-bottom:16px}
+  .stack{display:flex;flex-wrap:wrap;gap:8px}
+  .stack span{font-size:13px;color:var(--muted);border:1px solid var(--line);padding:5px 13px;border-radius:999px}
+
+  /* CONTACT */
+  .contact{padding:70px 0 90px}
+  .socials{display:flex;gap:16px;flex-wrap:wrap}
+  .socials a{
+    display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:15px;
+    border:1px solid var(--line);padding:12px 22px;border-radius:10px;
+    transition:border-color .15s,color .15s;
+  }
+  .socials a:hover{border-color:var(--accent);color:var(--accent)}
+
+  footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:var(--muted);font-size:13.5px}
+
+  @media(max-width:820px){
+    .hero-grid{grid-template-columns:1fr}
+    .portrait img{max-width:280px;margin:0 auto}
+    .cards{grid-template-columns:1fr}
+    .card.wide{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">Daniel</div>
+      <div class="nav-links">
+        <a href="#project-section">Projects</a>
+        <a href="#contact-section">Contact</a>
+        <a href="media/Resume.pdf">Résumé.pdf</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Hey, I'm Daniel</h1>
+      <p>I'm a Computer Science student at the University of North Texas with a mathematics minor and a 4.0 GPA. My experience spans full-stack development, AI model evaluation, and sports and financial data projects. I'm currently seeking software engineering roles in technology and financial services where I can pair technical problem-solving with clean, well-structured systems. Here are some of the technologies I frequently use:</p>
+      <div class="tech">
+        <span>Python</span><span>JavaScript</span><span>C++</span><span>React</span>
+        <span>Node.js</span><span>SQL</span><span>Git</span>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="media/profile.jpg" alt="Picture of Daniel Akisanmi">
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="project-section">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="cards">
+
+      <div class="card wide">
+        <img class="thumb" src="media/projects/nba.svg" alt="NBA Finals Analyzer">
+        <div class="card-body">
+          <div class="meta"><span>Current</span><a class="link" href="https://DanielTheUNT.github.io/nba-finals-analyzer-web/" target="_blank">Live site</a></div>
+          <h3>NBA Finals Analyzer</h3>
+          <p>A Python analytics engine that predicts the NBA champion and projects the leading scorer on every roster. Finals probabilities come from a logistic regression trained on every past season — each historical team's win percentage, net rating, and star scoring share, labeled by who won the title. Scorer projections use current-season averages adjusted for teammate usage overlap and mid-season trades. Pulls live data through the nba_api with an automatic offline fallback.</p>
+          <div class="stack"><span>Python</span><span>Scikit-Learn</span><span>Pandas</span><span>nba_api</span><span>Machine Learning</span><span>Sports Analytics</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="thumb" src="media/projects/claro.svg" alt="Claro Digital">
+        <div class="card-body">
+          <div class="meta"><span>05/2026</span><a class="link" href="https://www.clarodigital.xyz/" target="_blank">Live site</a></div>
+          <h3>Claro Digital</h3>
+          <p>Claro Digital is a marketing agency I co-founded with a small group of friends at the University of North Texas. Our goal is to give small businesses in the DFW area a modern website at a competitive price. I contribute to building client sites with HTML, CSS, and JavaScript, with a strong focus on SEO — structured data, meta tags, and Google Search Console — and deployment on Digital Ocean with custom DNS.</p>
+          <div class="stack"><span>SEO</span><span>Vanilla JS</span><span>Digital Branding</span><span>Responsive Design</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="thumb" src="media/projects/study.svg" alt="Study Planner App">
+        <div class="card-body">
+          <div class="meta"><span>2025</span><a class="link" href="https://github.com/DanielTheUNT/study-planner-app" target="_blank">GitHub</a></div>
+          <h3>Study Planner App</h3>
+          <p>An AI-powered academic planning tool for college students. Students manage tasks, build schedules, and track coursework through a React interface backed by an Express API and SQLite database. I built the full stack solo — frontend, backend, database schema, and WCAG-compliant accessibility fixes — and delivered UML design docs and a usability testing report alongside the code.</p>
+          <div class="stack"><span>React</span><span>Vite</span><span>Node.js</span><span>Express</span><span>SQLite</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="thumb" src="media/projects/rlamr.svg" alt="RL-AMR ParaView">
+        <div class="card-body">
+          <div class="meta"><span>2025</span><a class="link" href="https://github.com/DanielTheUNT/rl-amr-paraview" target="_blank">GitHub</a></div>
+          <h3>RL-AMR ParaView</h3>
+          <p>A reinforcement learning agent that learns where to refine a computational mesh under a fixed budget, placing refinement masks over high-gradient regions of a 2D scalar field with PPO and ParaView visualization. I diagnosed and fixed a reward-shaping bug that let the random baseline outscore the learned policy, verified the fix with a two-mask sanity check, and the corrected agent beat random by ~3%.</p>
+          <div class="stack"><span>Python</span><span>PPO</span><span>Reinforcement Learning</span><span>ParaView</span></div>
+        </div>
+      </div>
+
+      <div class="card wide">
+        <div class="card-body" style="grid-column:1/-1">
+          <div class="meta"><span>2024</span></div>
+          <h3>Personal Finance Tracker</h3>
+          <p>A web app for managing expenses, setting budgets, and visualizing spending trends, built with Python and SQL. Focused on turning raw transaction data into clear, actionable budgeting insights.</p>
+          <div class="stack"><span>Python</span><span>SQL</span><span>Data Visualization</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact-section">
+  <div class="wrap">
+    <h2>Contact Me</h2>
+    <div class="socials">
+      <a href="https://github.com/DanielTheUNT" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/daniel-akisanmi/" target="_blank">LinkedIn</a>
+      <a href="mailto:d.akisanmi.2023@gmail.com">Email</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Copyright © 2026 Daniel Akisanmi</div>
+</footer>
+
+</body>
+</html>
