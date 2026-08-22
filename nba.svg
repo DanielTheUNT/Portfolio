@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440">
-<rect width="900" height="440" fill="#101828"/>
-<circle cx="780" cy="80" r="180" fill="#5eead4" opacity="0.12"/>
-<circle cx="120" cy="400" r="140" fill="#5eead4" opacity="0.10"/>
-<text x="60" y="200" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#ffffff">Study Planner</text>
-<text x="60" y="250" font-family="monospace" font-size="22" fill="#5eead4">AI-powered academic planning</text>
-<rect x="60" y="290" width="70" height="6" rx="3" fill="#5eead4"/>
+<rect width="900" height="440" fill="#0b1026"/>
+<circle cx="780" cy="80" r="180" fill="#5b8cff" opacity="0.12"/>
+<circle cx="120" cy="400" r="140" fill="#5b8cff" opacity="0.10"/>
+<text x="60" y="200" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#ffffff">Claro Digital</text>
+<text x="60" y="250" font-family="monospace" font-size="22" fill="#5b8cff">Design-focused websites for local growth</text>
+<rect x="60" y="290" width="70" height="6" rx="3" fill="#5b8cff"/>
 </svg>
